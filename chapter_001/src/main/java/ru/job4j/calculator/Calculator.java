@@ -4,23 +4,23 @@ public class Calculator {
 
     private double result;
 
-    void add(double first, double second){
+    void add(double first, double second) {
         this.result = first + second;
     }
 
-    void substract(double first, double second){
+    void substract(double first, double second) {
         this.result = first - second;
     }
 
-    void div(double first, double second){
+    void div(double first, double second) {
         this.result = first / second;
     }
 
-    void multiple(double first, double second){
+    void multiple(double first, double second) {
         this.result = first * second;
     }
 
-    public double getResult(){
+    public double getResult() {
         return this.result;
     }
 }
