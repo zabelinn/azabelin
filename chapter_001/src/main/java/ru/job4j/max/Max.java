@@ -17,4 +17,16 @@ public class Max {
         return first > second ? first : second;
     }
 
+    /**
+     * Выбрать максимальное число из трех чисел.
+     * @param first число для сравнения.
+     * @param second число для сравнения.
+     * @param third число для сравнения.
+     * @return максимальное число.
+     */
+    public int max(int first, int second, int third) {
+        return max(first, max(second, third));
+    }
+
+
 }
