@@ -25,8 +25,7 @@ public class Contains {
 
         int inner = 0;
 
-        outerLoop:
-        for (int outer = 0; outer <= lenOrigin - lenSub; outer++) {
+        for (int outer = 0; outer <= lenOrigin - lenSub && !res; outer++) {
             while (originArr[outer] == subArr[inner]) {
                 outer++;
                 inner++;
@@ -34,7 +33,7 @@ public class Contains {
                 if (inner == lenSub) {
                     // origin contains sub
                     res = true;
-                    break outerLoop;
+                    break;
                 }
             }
             // reset inner counter
